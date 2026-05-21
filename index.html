@@ -26,12 +26,12 @@
         }
 
         .container {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding-left: 5%;
-    padding-right: 0;
-}
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding-left: 5%;
+            padding-right: 0;
+        }
 
         /* Botões */
         .btn {
@@ -72,35 +72,37 @@
 
         /* HERO */
         .hero {
-    background: linear-gradient(135deg, #eef2f7 0%, #ffffff 100%);
-    padding: 18px 0 8px;
-    border-bottom: 1px solid #dce5ef;
-    overflow: hidden;
-position: relative;
-isolation: isolate;
-}
-.hero::after {
-    content: "";
-    position: absolute;
-    bottom: -120px;
-    right: -120px;
-    width: 320px;
-    height: 320px;
-    background: rgba(10,92,142,0.06);
-    border-radius: 50%;
-    filter: blur(40px);
-z-index: -1;
-}
+            background: linear-gradient(135deg, #eef2f7 0%, #ffffff 100%);
+            padding: 0;
+            border-bottom: 1px solid #dce5ef;
+            overflow: hidden;
+            position: relative;
+            isolation: isolate;
+        }
+        .hero::after {
+            content: "";
+            position: absolute;
+            bottom: -120px;
+            right: -120px;
+            width: 320px;
+            height: 320px;
+            background: rgba(10,92,142,0.06);
+            border-radius: 50%;
+            filter: blur(40px);
+            z-index: -1;
+        }
         .hero .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-}
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+        }
 
         .hero-content {
             flex: 1;
             text-align: left;
+            padding: 40px 0;
+            padding-right: 40px;
         }
 
         .hero-badge {
@@ -177,45 +179,31 @@ z-index: -1;
         }
 
         .hero-image {
-    flex: 1.1;
-    position: relative;
-    min-height: 500px;
-
-    clip-path: polygon(2% 0, 100% 0, 100% 100%, 12% 100%);
-
-    overflow: hidden;
-}
-            .hero-image img {
-    position: absolute;
-    inset: 0;
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-    object-position: 68% center;
-
-    transform: scale(1.18);
-
-    opacity: 0.92;
-
-    z-index: 0;
-
-    display: block;
-}
-.hero-image::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.22);
-    z-index: 1;
-}
-.hero-image h2,
-.hero-image span,
-.hero-image div {
-    position: relative;
-    z-index: 2;
-}
+            flex: 1;
+            position: relative;
+            min-height: 500px;
+            clip-path: polygon(2% 0, 100% 0, 100% 100%, 12% 100%);
+            overflow: hidden;
+        }
+        .hero-image img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 68% center;
+            transform: scale(1.18);
+            opacity: 0.92;
+            z-index: 0;
+            display: block;
+        }
+        .hero-image::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.22);
+            z-index: 1;
+        }
 
         /* Seções padrão */
         .section-light {
@@ -229,8 +217,8 @@ z-index: -1;
         }
 
         section {
-    padding: 42px 0;
-}
+            padding: 42px 0;
+        }
 
         .section-title {
             font-size: 2rem;
@@ -244,7 +232,7 @@ z-index: -1;
             color: #0a5c8e;
         }
 
-        /* CARDS DE SERVIÇO */
+        /* CARDS DE SERVIÇO - corrigidos para mobile */
         .services-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -258,6 +246,9 @@ z-index: -1;
             transition: all 0.3s;
             border: 1px solid #e0e8f0;
             box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
 
         .service-card:hover {
@@ -276,6 +267,9 @@ z-index: -1;
 
         .service-content {
             padding: 1.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
         }
 
         .service-card h3 {
@@ -288,9 +282,9 @@ z-index: -1;
             color: #2c3e50;
             font-size: 0.9rem;
             line-height: 1.6;
+            margin-bottom: 0;
         }
 
-        /* Card destaque com badge interno */
         .service-card.highlight {
             border: 2px solid #0a5c8e;
             background: #f9fdfe;
@@ -307,6 +301,7 @@ z-index: -1;
             letter-spacing: 1px;
             margin-bottom: 0.8rem;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            align-self: flex-start;
         }
 
         /* Depoimentos */
@@ -400,7 +395,7 @@ z-index: -1;
             box-shadow: 0 2px 6px rgba(0,0,0,0.05);
         }
 
-        /* CTA contraste (modelo reutilizável) */
+        /* CTA contraste */
         .cta-contraste {
             background: linear-gradient(135deg, #0a5c8e 0%, #0a4a72 100%);
             text-align: center;
@@ -541,7 +536,7 @@ z-index: -1;
             padding: 0 1.5rem 1.2rem 1.5rem;
         }
 
-        /* WhatsApp flutuante */
+        /* WhatsApp flutuante - visível apenas em desktop */
         .whatsapp-float {
             position: fixed;
             right: 24px;
@@ -620,7 +615,7 @@ z-index: -1;
             text-decoration: none;
         }
 
-        /* Responsividade */
+        /* Responsividade - CORREÇÕES PARA MOBILE */
         @media (max-width: 1000px) {
             .services-grid {
                 grid-template-columns: repeat(2, 1fr);
@@ -629,13 +624,24 @@ z-index: -1;
                 grid-template-columns: 1fr;
             }
         }
+
         @media (max-width: 900px) {
+            .container {
+                padding-left: 5%;
+                padding-right: 5%;
+            }
             .hero .container {
                 flex-direction: column;
                 text-align: center;
+                gap: 1rem;
             }
             .hero-content {
                 text-align: center;
+                padding: 30px 0;
+                padding-right: 0;
+            }
+            .hero-badge {
+                display: inline-block;
             }
             .hero-buttons, .trust-badges {
                 justify-content: center;
@@ -643,11 +649,26 @@ z-index: -1;
             .interestadual-grid {
                 grid-template-columns: 1fr;
             }
+            .hero-image {
+                width: 100%;
+                max-width: 100%;
+                margin: 0 auto;
+                clip-path: none;
+                min-height: auto;
+                border-radius: 24px;
+                overflow: hidden;
+            }
             .hero-image img {
-                max-width: 350px;
+                position: relative;
                 transform: none;
+                height: auto;
+                object-position: center;
+            }
+            .hero-image::before {
+                display: none;
             }
         }
+
         @media (max-width: 700px) {
             .services-grid {
                 grid-template-columns: 1fr;
@@ -655,33 +676,85 @@ z-index: -1;
             .split-columns {
                 grid-template-columns: 1fr;
             }
-        }
-        @media (max-width: 600px) {
+            section {
+                padding: 32px 0;
+            }
             .hero-content h1 {
-                font-size: 2rem;
+                font-size: 2.2rem;
+            }
+            .hero-badge {
+                font-size: 0.7rem;
+            }
+            .hero-subtitle {
+                font-size: 0.9rem;
+            }
+            .hero-description {
+                font-size: 0.85rem;
             }
             .btn {
                 padding: 10px 18px;
                 font-size: 0.85rem;
             }
-            .whatsapp-float {
-                padding: 8px 18px;
+            .trust-badge {
+                font-size: 0.65rem;
+                padding: 4px 10px;
+            }
+            .section-title {
+                font-size: 1.6rem;
+            }
+            .service-card h3 {
+                font-size: 1.2rem;
+            }
+            .service-card p {
+                font-size: 0.85rem;
+            }
+            .cta-contraste {
+                padding: 2rem 1rem;
+                margin: 0 2%;
+            }
+            .cta-contraste h2 {
+                font-size: 1.4rem;
+            }
+            .areas-card h3 {
+                font-size: 1.1rem;
+            }
+            .area-list li {
                 font-size: 0.8rem;
-                right: 16px;
-                bottom: 70px;
+            }
+            .estado-badge {
+                font-size: 0.7rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .whatsapp-float {
+                display: none;  /* Remove o WhatsApp flutuante no celular */
             }
             .bottom-bar {
-                display: grid;
+                display: grid;    /* Mostra a barra inferior mobile */
             }
             body {
                 padding-bottom: 70px;
+            }
+            .hero-content {
+                padding: 20px 0;
+            }
+            .hero-content h1 {
+                font-size: 1.8rem;
+            }
+            .hero-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .hero-buttons .btn {
+                justify-content: center;
             }
         }
     </style>
 </head>
 <body>
 
-<!-- WhatsApp flutuante DIREITA -->
+<!-- WhatsApp flutuante DIREITA (visível apenas em desktop) -->
 <a href="https://wa.me/5522999999999?text=Olá%20Caio%20Auto%20Socorro,%20preciso%20de%20um%20reboque%20urgente!" class="whatsapp-float" target="_blank">
     <i class="fab fa-whatsapp"></i> <span>Atendimento 24h</span>
 </a>
@@ -754,7 +827,7 @@ z-index: -1;
     </div>
 </section>
 
-<!-- ========== NOVA SEÇÃO CTA (logo após serviços) ========== -->
+<!-- CTA após serviços -->
 <div class="container" style="padding: 0 5%; margin-bottom: 60px; margin-top: -20px;">
     <div class="cta-contraste">
         <h2>🚨 Precisa de um guincho agora mesmo?</h2>
@@ -807,7 +880,7 @@ z-index: -1;
     </div>
 </section>
 
-<!-- CTA CONTRASTE (segunda aparição, no final - igual já existia) -->
+<!-- CTA final -->
 <div class="container" style="padding: 0 5%; margin-bottom: 60px;">
     <div class="cta-contraste">
         <h2>🚨 Precisa de um guincho agora mesmo?</h2>
