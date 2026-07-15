@@ -879,8 +879,21 @@
             }
         }
     </style>
+    <!-- Google Tag Manager -->
+    <!-- ⚠️ TROQUE "GTM-MBLM934J" pelo seu container ID real -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MBLM934J');</script>
+    <!-- End Google Tag Manager -->
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<!-- ⚠️ TROQUE "GTM-MBLM934J" pelo mesmo container ID de cima -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBLM934J"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <a href="https://wa.me/5522998284510?text=Ol%C3%A1%20Caio%20Auto%20Socorro,%20preciso%20de%20um%20reboque%20urgente!" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
     <i class="fab fa-whatsapp" aria-hidden="true"></i> <span>Atendimento 24h</span>
@@ -889,12 +902,12 @@
 <section class="hero">
     <div class="container">
         <div class="hero-content">
-            <div class="hero-badge">🚛 PAROU NA ESTRADA EM CAMPOS DOS GOYTACAZES? LIGOU. CHEGAMOS.</div>
+            <div class="hero-badge">🚛 REBOQUE E GUINCHO 24H — CAMPOS DOS GOYTACAZES</div>
             <div style="display:flex; align-items:center; gap:6px; margin:8px 0; font-weight:700; font-size:0.9rem; color:#1e2a3e;">
                 <span style="color:#fbbc04; letter-spacing:1px;">★★★★★</span> 5.0 · 29 avaliações no Google
             </div>
-            <h1>Caio Auto Socorro <span>Reboque & Guincho</span></h1>
-            <div class="hero-subtitle">Frota própria, nova e especializada em reboque pesado</div>
+            <h1>Quebrou? <span>Chegamos em 20 Minutos</span></h1>
+            <div class="hero-subtitle">Caio Auto Socorro — frota própria, nova e especializada em reboque pesado</div>
             <p class="hero-description">Atendimento emergencial, transporte interestadual e emissão de NF-e. Atendimento rápido e seguro em toda região Norte Fluminense.</p>
             <div class="hero-buttons">
                 <a href="tel:5522998284510" class="btn btn-primary"><i class="fas fa-phone-alt" aria-hidden="true"></i> (22) 998284510 - LIGAR AGORA</a>
@@ -1095,9 +1108,17 @@
     </div>
 </section>
 
+<div class="container" style="padding: 0 5%; margin-bottom: 60px; margin-top: -20px;">
+    <div class="cta-contraste">
+        <h2>🤝 Ainda com dúvida?</h2>
+        <p>Fale agora com a gente e resolva na hora, sem compromisso</p>
+        <a href="https://wa.me/5522998284510?text=Ol%C3%A1%2C%20fiquei%20com%20uma%20d%C3%BAvida%20e%20gostaria%20de%20falar%20com%20voc%C3%AAs" target="_blank" rel="noopener noreferrer" class="btn"><i class="fab fa-whatsapp" aria-hidden="true"></i> FALAR NO WHATSAPP</a>
+    </div>
+</div>
+
 <footer>
     <div class="footer-grid">
-        <div class="footer-brand"><h3>CAIO AUTO SOCORRO</h3><p>Reboque e guincho 24h com frota própria, atendimento rápido e preço justo.</p><p style="margin-top:0.8rem; font-size:0.8rem; color:#8fa3b8;">CNPJ: 53.763.733/0001-44</p></div>
+        <div class="footer-brand"><h3>CAIO AUTO SOCORRO</h3><p>Reboque e guincho 24h com frota própria, atendimento rápido e preço justo.</p><p style="margin-top:0.8rem; font-size:0.8rem; color:#8fa3b8;">CNPJ: 53.763.733/0001-44</p><p style="margin-top:0.8rem;"><a href="https://g.page/r/CRMEHXsa9NNpEBE/review" target="_blank" rel="noopener noreferrer" style="color:#fbbc04; font-size:0.85rem; text-decoration:none;"><i class="fas fa-star" aria-hidden="true"></i> Avalie nosso atendimento no Google</a></p></div>
         <div class="footer-links"><h4>Contato</h4><a href="tel:5522998284510"><i class="fas fa-phone" aria-hidden="true"></i> (22) 998284510</a><a href="https://wa.me/5522998284510" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp 24h</a><p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Campos dos Goytacazes - RJ</p></div>
         <div class="footer-links"><h4>Horário</h4><p>🚛 24 horas por dia</p><p>📅 7 dias por semana</p><p>🔄 Incluindo feriados</p></div>
     </div>
@@ -1117,6 +1138,31 @@
         if (!active) item.classList.add('active');
     }
     document.querySelector('.faq-item')?.classList.add('active');
+
+    // Rastreamento de conversão: clique em WhatsApp e Telefone
+    // Envia eventos para o dataLayer — configure os gatilhos no Google Tag Manager
+    // (Gatilho tipo "Evento personalizado" com nome "whatsapp_click" e "phone_click")
+    window.dataLayer = window.dataLayer || [];
+
+    document.querySelectorAll('a[href*="wa.me"], a[href*="api.whatsapp.com"]').forEach(function(link) {
+        link.addEventListener('click', function() {
+            window.dataLayer.push({
+                'event': 'whatsapp_click',
+                'event_category': 'contato',
+                'event_label': link.textContent.trim() || 'WhatsApp'
+            });
+        });
+    });
+
+    document.querySelectorAll('a[href^="tel:"]').forEach(function(link) {
+        link.addEventListener('click', function() {
+            window.dataLayer.push({
+                'event': 'phone_click',
+                'event_category': 'contato',
+                'event_label': link.textContent.trim() || 'Ligação'
+            });
+        });
+    });
 </script>
 </body>
 </html>
