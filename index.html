@@ -882,12 +882,39 @@
             }
         }
     </style>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MBLM934J');</script>
+    <!-- Google Tag Manager (carregamento adiado para reduzir TBT) -->
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    var gtmLoaded = false;
+    function loadGTM() {
+        if (gtmLoaded) return;
+        gtmLoaded = true;
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MBLM934J');
+    }
+    // Carrega assim que o navegador ficar ocioso, ou no máximo 3.5s após o load,
+    // ou imediatamente na primeira interação do usuário (clique, toque, scroll) — o que vier primeiro.
+    if ('requestIdleCallback' in window) {
+        window.addEventListener('load', function() {
+            requestIdleCallback(loadGTM, { timeout: 3500 });
+        });
+    } else {
+        window.addEventListener('load', function() {
+            setTimeout(loadGTM, 2000);
+        });
+    }
+    ['scroll', 'mousemove', 'touchstart', 'keydown'].forEach(function(evt) {
+        window.addEventListener(evt, function once() {
+            loadGTM();
+            ['scroll', 'mousemove', 'touchstart', 'keydown'].forEach(function(e) {
+                window.removeEventListener(e, once);
+            });
+        }, { once: true, passive: true });
+    });
+    </script>
     <!-- End Google Tag Manager -->
 </head>
 <body>
@@ -1024,7 +1051,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="interestadual-grid">
             <div class="interestadual-text">
                 <h2>Transporte <span style="color:#0a5c8e">Interestadual</span></h2>
-                <p>Levamos seu veículo com segurança para qualquer destino do Brasil. Rotas fixas semanais com monitoramento e transporte segurouso.</p>
+                <p>Levamos seu veículo com segurança para qualquer destino do Brasil. Rotas fixas semanais com monitoramento e transporte seguro.</p>
                 <div style="margin-top:1rem"><span style="background:#eef2f7; padding:6px 12px; border-radius:20px;">✅ transporte seguro</span> <span style="background:#eef2f7; padding:6px 12px; border-radius:20px;">✅ Rastreamento</span></div>
             </div>
             <div class="rotas">
