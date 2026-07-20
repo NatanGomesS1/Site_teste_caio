@@ -402,7 +402,7 @@
             align-items: center;
             gap: 6px;
             margin-top: 12px;
-            color: #128C7E;
+            color: #075E54;
             font-weight: 700;
             font-size: 0.85rem;
             text-decoration: none;
@@ -785,14 +785,18 @@
                 max-width: 100%;
                 margin: 0 auto;
                 clip-path: none;
-                min-height: auto;
+                aspect-ratio: 16 / 9;
+                min-height: 0;
                 border-radius: 24px;
                 overflow: hidden;
             }
             .hero-image img {
-                position: relative;
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
                 transform: none;
-                height: auto;
                 object-position: center;
             }
             .hero-image::before {
@@ -927,6 +931,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fab fa-whatsapp" aria-hidden="true"></i> <span>Atendimento 24h</span>
 </a>
 
+<main>
 <section class="hero">
     <div class="container">
         <div class="hero-content">
@@ -1143,6 +1148,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="https://wa.me/5522998284510?text=Ol%C3%A1%2C%20fiquei%20com%20uma%20d%C3%BAvida%20e%20gostaria%20de%20falar%20com%20voc%C3%AAs" target="_blank" rel="noopener noreferrer" class="btn"><i class="fab fa-whatsapp" aria-hidden="true"></i> FALAR NO WHATSAPP</a>
     </div>
 </div>
+
+</main>
 
 <footer>
     <div class="footer-grid">
