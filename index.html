@@ -38,7 +38,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700;14..32,900&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700;14..32,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700;14..32,900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700;14..32,900&display=swap" rel="stylesheet"></noscript>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" media="print" onload="this.media='all'">
 
     <script type="application/ld+json">
@@ -54,7 +55,7 @@
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5.0",
-        "reviewCount": "29"
+        "reviewCount": "58"
       },
       "address": {
         "@type": "PostalAddress",
@@ -215,17 +216,15 @@
             padding-right: 40px;
         }
 
-        .hero-badge {
-            background: rgba(10, 92, 142, 0.1);
-            border-left: 4px solid #0a5c8e;
-            padding: 0.5rem 1rem;
-            display: inline-block;
-            margin-bottom: 1rem;
+        .rating-badge {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin: 8px 0;
             font-weight: 700;
-            font-size: 0.75rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: #0a5c8e;
+            font-size: 0.9rem;
+            color: #1e2a3e;
         }
 
         .hero-content h1 {
@@ -239,7 +238,6 @@
 
         .hero-content h1 span {
             color: #0a5c8e;
-            display: block;
         }
 
         .hero-subtitle {
@@ -264,6 +262,19 @@
             flex-wrap: wrap;
             gap: 1rem;
             margin-bottom: 1.5rem;
+        }
+
+        .click-trigger {
+            font-size: 0.8rem;
+            color: #5a6b7d;
+            margin: 10px 0 16px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .click-trigger i {
+            color: #1fa855;
         }
 
         .trust-badges {
@@ -771,8 +782,12 @@
                 padding: 30px 0;
                 padding-right: 0;
             }
-            .hero-badge {
-                display: inline-block;
+            .rating-badge {
+                justify-content: center;
+            }
+            .click-trigger {
+                justify-content: center;
+                text-align: center;
             }
             .hero-buttons, .trust-badges {
                 justify-content: center;
@@ -817,8 +832,8 @@
             .hero-content h1 {
                 font-size: 2.2rem;
             }
-            .hero-badge {
-                font-size: 0.7rem;
+            .rating-badge {
+                font-size: 0.75rem;
             }
             .hero-subtitle {
                 font-size: 0.9rem;
@@ -935,17 +950,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="hero">
     <div class="container">
         <div class="hero-content">
-            <div class="hero-badge">🚛 REBOQUE E GUINCHO 24H — CAMPOS DOS GOYTACAZES, PORTO DO AÇU E REGIÃO</div>
-            <div style="display:flex; align-items:center; gap:6px; margin:8px 0; font-weight:700; font-size:0.9rem; color:#1e2a3e;">
-                <span style="color:#fbbc04; letter-spacing:1px;">★★★★★</span> 5.0 · 29 avaliações no Google
+            <div class="rating-badge">
+                <span style="color:#fbbc04; letter-spacing:1px;">★★★★★</span> 5.0 <span class="rating-count">(58 avaliações no Google)</span>
             </div>
-            <h1>Quebrou? <span>Chegamos em 20 Minutos</span></h1>
-            <h2 class="hero-subtitle">Guincho e Reboque 24h em Campos dos Goytacazes — frota própria, nova e especializada em reboque leve, pesado, máquinas e equipamentos</h2>
-            <p class="hero-description">Atendimento emergencial, transporte interestadual e emissão de NF-e. Atendimento rápido e seguro em Campos, São João da Barra, São Francisco do Itabapoana e toda região Norte Fluminense.</p>
+            <h1>Guincho e Reboque 24h <span>em Campos dos Goytacazes</span></h1>
+            <h2 class="hero-subtitle">Quebrou? Chegamos em 20 minutos — frota própria e especializada</h2>
+            <p class="hero-description">Atendimento emergencial, transporte interestadual e emissão de NF-e. Atendimento rápido e seguro em Campos dos Goytacazes, São João da Barra (Porto do Açu), São Francisco do Itabapoana e toda região Norte Fluminense.</p>
             <div class="hero-buttons">
                 <a href="tel:5522998284510" class="btn btn-primary"><i class="fas fa-phone-alt" aria-hidden="true"></i> (22) 998284510 - LIGAR AGORA</a>
                 <a href="https://wa.me/5522998284510" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i> WHATSAPP</a>
             </div>
+            <p class="click-trigger"><i class="fas fa-check-circle" aria-hidden="true"></i> Atendimento imediato · Você só paga se aceitar o orçamento</p>
             <div class="trust-badges">
                 <span class="trust-badge"><i class="fas fa-check-circle" aria-hidden="true"></i> Nota Fiscal</span>
                 <span class="trust-badge"><i class="fas fa-credit-card" aria-hidden="true"></i> PIX / Cartão</span>
@@ -1015,7 +1030,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 </section>
 
-<div class="container" style="padding: 0 5%; margin-bottom: 60px; margin-top: -20px;">
+<div class="container" style="padding: 0 5%; margin-bottom: 60px; margin-top: 40px;">
     <div class="cta-contraste">
         <h2>🚨 Precisa de um guincho agora mesmo?</h2>
         <p>Atendimento 24 horas - Equipe a caminho em minutos</p>
@@ -1069,7 +1084,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 </section>
 
-<div class="container" style="padding: 0 5%; margin-bottom: 60px;">
+<div class="container" style="padding: 0 5%; margin-bottom: 60px; margin-top: 40px;">
     <div class="cta-contraste">
         <h2>🚨 Precisa de um guincho agora mesmo?</h2>
         <p>Atendimento 24 horas - Equipe a caminho em minutos</p>
@@ -1141,7 +1156,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 </section>
 
-<div class="container" style="padding: 0 5%; margin-bottom: 60px; margin-top: -20px;">
+<div class="container" style="padding: 0 5%; margin-bottom: 60px; margin-top: 40px;">
     <div class="cta-contraste">
         <h2>🤝 Ainda com dúvida?</h2>
         <p>Fale agora com a gente e resolva na hora, sem compromisso</p>
