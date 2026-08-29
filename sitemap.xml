@@ -1,21 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://caioreboquecampos.com.br/</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://caioreboquecampos.com.br/hero-desktop.webp</image:loc>
+      <image:caption>Caminhão guincho da Caio Auto Socorro prestando serviço de reboque pesado em Campos dos Goytacazes</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://caioreboquecampos.com.br/reboque_pesado_campos_dos_goytacazes_caio_guincho.webp</image:loc>
+      <image:caption>Reboque pesado de caminhão em rodovia próxima a Campos dos Goytacazes</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://caioreboquecampos.com.br/reboque_plataforma_veicular-campos_dos_goytacazes.webp</image:loc>
+      <image:caption>Guincho plataforma para carros em Campos dos Goytacazes transportando picape</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://caioreboquecampos.com.br/reboque_simultaneo_frota_propria_campos_dos_goytacazes.webp</image:loc>
+      <image:caption>Reboque com frota própria em Campos dos Goytacazes guinchando dois veículos simultaneamente</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://caioreboquecampos.com.br/reboque_pracha_para_carros_campos_especiais.webp</image:loc>
+      <image:caption>Reboque de motos e carros especiais em Campos dos Goytacazes</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://caioreboquecampos.com.br/reboque_interestadual_caio_auto_socorro_campos_dos_goytacazes.webp</image:loc>
+      <image:caption>Transporte interestadual de veículos saindo de Campos dos Goytacazes</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://caioreboquecampos.com.br/reboque_emergencia_campos_dos_goytacazes.webp</image:loc>
+      <image:caption>Socorro emergencial 24h em Campos dos Goytacazes para veículo utilitário</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://caioreboquecampos.com.br/porto-do-acu/</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://caioreboquecampos.com.br/hero-desktop.webp</image:loc>
+      <image:caption>Caminhão guincho da Caio Auto Socorro prestando serviço de reboque pesado no Porto do Açu</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://caioreboquecampos.com.br/reboque_pesado_campos_dos_goytacazes_caio_guincho.webp</image:loc>
+      <image:caption>Reboque pesado de caminhão em rodovia próxima ao Porto do Açu</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://caioreboquecampos.com.br/reboque_plataforma_veicular-campos_dos_goytacazes.webp</image:loc>
+      <image:caption>Guincho plataforma para carros no Porto do Açu transportando picape</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://caioreboquecampos.com.br/reboque_simultaneo_frota_propria_campos_dos_goytacazes.webp</image:loc>
+      <image:caption>Reboque com frota própria no Porto do Açu guinchando dois veículos simultaneamente</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://caioreboquecampos.com.br/reboque_pracha_para_carros_campos_especiais.webp</image:loc>
+      <image:caption>Reboque de motos e carros especiais no Porto do Açu</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://caioreboquecampos.com.br/reboque_interestadual_caio_auto_socorro_campos_dos_goytacazes.webp</image:loc>
+      <image:caption>Transporte interestadual de veículos saindo do Porto do Açu</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://caioreboquecampos.com.br/reboque_emergencia_campos_dos_goytacazes.webp</image:loc>
+      <image:caption>Socorro emergencial 24h no Porto do Açu para veículo utilitário</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://caioreboquecampos.com.br/macae/</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://caioreboquecampos.com.br/hero-desktop.webp</image:loc>
+      <image:caption>Caminhão guincho da Caio Auto Socorro prestando serviço de reboque em Macaé</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://caioreboquecampos.com.br/reboque_pesado_campos_dos_goytacazes_caio_guincho.webp</image:loc>
+      <image:caption>Reboque pesado de caminhão em rodovia próxima a Macaé</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://caioreboquecampos.com.br/reboque_plataforma_veicular-campos_dos_goytacazes.webp</image:loc>
+      <image:caption>Guincho plataforma para carros em Macaé transportando picape</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://caioreboquecampos.com.br/reboque_simultaneo_frota_propria_campos_dos_goytacazes.webp</image:loc>
+      <image:caption>Reboque com frota própria em Macaé guinchando dois veículos simultaneamente</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://caioreboquecampos.com.br/reboque_pracha_para_carros_campos_especiais.webp</image:loc>
+      <image:caption>Reboque de motos e carros especiais em Macaé</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://caioreboquecampos.com.br/reboque_interestadual_caio_auto_socorro_campos_dos_goytacazes.webp</image:loc>
+      <image:caption>Transporte interestadual de veículos saindo de Macaé</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://caioreboquecampos.com.br/reboque_emergencia_campos_dos_goytacazes.webp</image:loc>
+      <image:caption>Socorro emergencial 24h em Macaé para veículo utilitário</image:caption>
+    </image:image>
   </url>
 </urlset>
